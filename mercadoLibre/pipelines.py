@@ -8,7 +8,7 @@ class MercadolibrePipeline(object):
 
 	def __init__(self):
 
-		self.conn = MySQLdb.connect(user='root', passwd='baggio', db='pyScrapper', host='localhost', charset="utf8", use_unicode=True)
+		self.conn = MySQLdb.connect(user='root', passwd='baggio', db='pyScraper', host='localhost', charset="utf8", use_unicode=True)
 		self.cursor = self.conn.cursor()
 
 	def getCoordinate(self, floatStr):
