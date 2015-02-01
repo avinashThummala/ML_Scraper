@@ -1,0 +1,96 @@
+create table mercadoLibre
+(
+	ML_Listing_URL TEXT,
+
+	ML_Type_of_real_estate VARCHAR(50),
+	ML_Type_of_transaction VARCHAR(25),
+
+	ML_Photo_1 TEXT,
+	ML_Photo_2 TEXT,
+	ML_Photo_3 TEXT,
+	ML_Photo_4 TEXT,
+	ML_Photo_5 TEXT,
+	ML_Photo_6 TEXT,
+	ML_Photo_7 TEXT,
+	ML_Photo_8 TEXT,
+	ML_Photo_9 TEXT,
+	ML_Photo_10 TEXT,
+	ML_Video TEXT,
+
+	ML_Provincia TEXT,
+	ML_Barrio TEXT, 
+	ML_Calle TEXT,
+
+	ML_Latitude FLOAT,
+	ML_Longitude FLOAT,	
+	ML_Telefono VARCHAR(20),
+
+	ML_Recámaras TEXT, 
+	ML_Antigüedad TEXT,
+	ML_Baños TEXT,
+
+	`ML_Superficie_construida_(m2)` FLOAT,
+	`ML_Superficie_total_(m2)` VARCHAR(20),
+
+	ML_Disposición TEXT,
+	ML_Horario_de_contacto TEXT,
+
+	ML_Amueblado TEXT,
+	ML_Apto_Profesional TEXT,
+	ML_Balcón TEXT,
+
+	`ML_Cant.de_pisos_del_edificio` TEXT,
+	ML_Conservación TEXT,
+
+	ML_Cuota_de_mantenimiento FLOAT,
+	ML_Nro_de_departamentos_por_piso TEXT,
+	ML_Elevador TEXT,
+
+	ML_Estacionamiento_ TEXT,
+	ML_Luminosidad TEXT,
+
+	ML_Metros²_de_jardín_común FLOAT,
+	ML_Metros²_de_jardín FLOAT,
+
+	ML_Título TEXT,
+	ML_Descripción TEXT,
+
+	ML_Agua_Corriente TINYINT(1),
+	ML_Aire_acondicionado TINYINT(1),
+	ML_Alarma TINYINT(1),
+	ML_Area_de_juegos_infantiles TINYINT(1),
+	ML_Asador TINYINT(1),
+	ML_Calefacción TINYINT(1),
+	ML_Cancha_de_squash TINYINT(1),
+	ML_Cancha_de_tenis TINYINT(1),
+	ML_Estacionamiento_para_visitantes TINYINT(1),
+	ML_Gas_Natural TINYINT(1),
+	ML_Conexión_a_internet TINYINT(1),
+	ML_Jacuzzi TINYINT(1),
+	ML_Jardín TINYINT(1),
+	ML_Luz_eléctrica TINYINT(1),
+	ML_Alberca TINYINT(1),
+	ML_Salón_de_fiesta TINYINT(1),
+	`ML_Salón_de_usos_múltiples_(SOM)` TINYINT(1),
+	ML_Teléfono TINYINT(1),
+	ML_Seguridad TINYINT(1),
+	ML_Bodega TINYINT(1),
+	ML_Cisterna TINYINT(1),
+	ML_Cocina_integral TINYINT(1),
+	ML_Recepción TINYINT(1),
+	ML_Comedor TINYINT(1),
+	ML_Cuarto_de_TV TINYINT(1),
+	ML_Cuarto_de_servicio TINYINT(1),
+	ML_Estudio TINYINT(1),
+	ML_Gimnasio TINYINT(1),
+	ML_Living_comedor TINYINT(1),
+	ML_Patio TINYINT(1),
+	ML_Playroom TINYINT(1),
+	ML_Terraza TINYINT(1),
+	ML_Vestidor TINYINT(1),
+	ML_Zotehuela TINYINT(1),
+
+	ML_Moneda VARCHAR(5),
+	ML_Precio FLOAT
+
+) DEFAULT CHARSET=utf8;
