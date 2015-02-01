@@ -168,9 +168,6 @@ class MLSpider(scrapy.Spider):
                         
             if 'mercadolibre.com.mx/MLM-' in url:
                 yield Request(url+"?noIndex=true&showPhones=true", callback=self.parseItem)
-
-        """                              
+                           
         if len(nextURL):                
-            yield Request(nextURL, callback=self.parse)        
-        """            
-                    
+            yield Request(nextURL, callback=self.parse)                            
