@@ -38,11 +38,12 @@ class MercadolibrePipeline(object):
 				%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s,
 				%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, 
 				%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, 
-				%s, %s
+				%s, %s, %s
 				        	
 	        	)""", (
 
 	        	item['ML_Listing_URL'].encode('utf-8'),
+	        	item['ML_Ad_Code'].encode('utf-8'),
 
 				item['ML_Type_of_real_estate'].encode('utf-8'),
 				item['ML_Type_of_transaction'].encode('utf-8'), 

@@ -89,6 +89,7 @@ class MLSpider(scrapy.Spider):
         newItem = MercadolibreItem()
 
         newItem['ML_Listing_URL'] = response.url
+        newItem['ML_Ad_Code'] = self.extractText(hxs.xpath('//span[@class=\'id-item\']/text()').extract(), 0)[12:]
 
         newItem['ML_Type_of_real_estate'] = self.extractText(hxs.xpath('//div[@id=\'techDataHolder\']/ul/li[span/text()=\'Inmueble:\']/strong/text()').extract(), 0)
         newItem['ML_Type_of_transaction'] = self.extractText( hxs.xpath(u"//div[@id=\'techDataHolder\']/ul/li[span/text()=\'Operaci\xf3n:\']/strong/text()").extract(), 0)

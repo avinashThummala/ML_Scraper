@@ -6,6 +6,7 @@ import scrapy
 class MercadolibreItem(scrapy.Item):
 
 	ML_Listing_URL = scrapy.Field()
+	ML_Ad_Code = scrapy.Field()
 
 	ML_Type_of_real_estate = scrapy.Field()
 	ML_Type_of_transaction = scrapy.Field()

@@ -1,6 +1,7 @@
 create table mercadoLibre
 (
 	ML_Listing_URL TEXT,
+	ML_Ad_Code VARCHAR(25),
 
 	ML_Type_of_real_estate VARCHAR(50),
 	ML_Type_of_transaction VARCHAR(25),
